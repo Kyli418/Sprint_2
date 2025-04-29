@@ -4,7 +4,7 @@ import model.constants.Colour;
 import service.ShoppingCart;
 import model.Food;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Meat meat = new Meat(5, 100);
         Apple redApple = new Apple(10, 50, Colour.RED);

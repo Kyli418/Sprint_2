@@ -3,7 +3,7 @@ import model.constants.Colour;
 import model.constants.Discount;
 
 public class Apple extends Food {
-    private String colour;
+    private final String colour;
 
     public Apple(int amount, double price, String colour) {
         super(amount, price);
@@ -12,7 +12,7 @@ public class Apple extends Food {
     }
     @Override
     public double getDiscount() {
-        if (colour == "red"){
+        if (colour.equals(Colour.RED)){
             return Discount.DISCOUNT_RED;
         }
         return Discount.NO_DISCOUNT;
